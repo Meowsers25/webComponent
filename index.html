@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Third Try</title>
+</head>
+
+
+<body>
+    <script src="userCard/script.js" defer></script>
+<script src="modal/script.js" defer></script>
+<script>
+    console.log("Hello")
+    const infoApi = '/art-info.json'
+    const getInfo = async () => {
+        await fetch(infoApi)
+        .then((response) => {
+            return response.json()
+        })
+        .then((response) => {
+            console.log(response)
+            response.forEach((user, index) => {
+                console.log(user.id, index)
+                const newNode = document.createElement("user-card")
+                newNode.setAttribute("doggo", user.pets[0])
+                newNode.setAttribute("img", user.img)
+                newNode.setAttribute("name", user.name)
+                newNode.setAttribute("age", user.age)
+                newNode.setAttribute("key", user.id)
+                document
+                    .getElementById('art-info')
+                    .insertAdjacentElement("beforeend", newNode)
+            })
+        })
+    }
+    // async function getInfo(){
+    //     const response = await fetch(infoApi)
+    //     const data = await response.json()
+    //     // console.log(data)
+    //     data.forEach((user, index) => {
+    //         console.log(user.id, index)
+    //         const newNode = document.createElement("user-card")
+    //         newNode.setAttribute("doggo", user.pets[0])
+    //         newNode.setAttribute("img", user.img)
+    //         newNode.setAttribute("name", user.name)
+    //         newNode.setAttribute("age", user.age)
+    //         newNode.setAttribute("key", user.id)
+    //         document
+    //             .getElementById('art-info')
+    //             .insertAdjacentElement("beforeend", newNode)
+    //     })
+    // }
+    getInfo()
+</script>
+    <h1>Web Components and an API</h1>
+    <div id="art-info"></div>
+</body>
+</html>

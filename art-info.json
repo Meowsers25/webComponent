@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "Chris",
+        "age": 50,
+        "coder": true,
+        "pets": ["Luna", "B", "Sully"],
+        "img": "./images/me2.jpeg"
+    },
+    {
+        "id": 2,
+        "name": "Katie",
+        "age": 38,
+        "coder": false,
+        "pets": ["Luna", "B", "Sully"],
+        "img": "./images/katie.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Katie",
+        "age": 36,
+        "coder": false,
+        "pets": ["Luna", "B", "Sully"],
+        "img": "./images/me2.jpeg"
+    },
+    {
+        "id": 5,
+        "name": "Katie",
+        "age": 35,
+        "coder": false,
+        "pets": ["Luna", "B", "Sully"],
+        "img": "./images/katie.jpg"
+    }
+]
