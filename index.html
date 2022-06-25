@@ -14,7 +14,7 @@
 <script src="modal/script.js" defer></script>
 <script>
     console.log("Hello")
-    const infoApi = '/art-info.json'
+    const infoApi = "./art-info.json"
     const getInfo = async () => {
         await fetch(infoApi)
         .then((response) => {
@@ -25,8 +25,8 @@
             response.forEach((user, index) => {
                 console.log(user.id, index)
                 const newNode = document.createElement("user-card")
-                newNode.setAttribute("doggo", user.pets[0])
-                newNode.setAttribute("img", user.img)
+                newNode.setAttribute("doggo", user.pets)
+                newNode.setAttribute("avatar", user.img)
                 newNode.setAttribute("name", user.name)
                 newNode.setAttribute("age", user.age)
                 newNode.setAttribute("key", user.id)
@@ -53,6 +53,7 @@
     //             .insertAdjacentElement("beforeend", newNode)
     //     })
     // }
+    
     getInfo()
 </script>
     <h1>Web Components and an API</h1>

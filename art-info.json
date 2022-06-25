@@ -5,7 +5,7 @@
         "age": 50,
         "coder": true,
         "pets": ["Luna", "B", "Sully"],
-        "img": "./images/me2.jpeg"
+        "img": "./images/wizard.png"
     },
     {
         "id": 2,
@@ -13,22 +13,22 @@
         "age": 38,
         "coder": false,
         "pets": ["Luna", "B", "Sully"],
-        "img": "./images/katie.jpg"
+        "img": "./images/monk.png"
     },
     {
         "id": 4,
-        "name": "Katie",
+        "name": "Luna",
         "age": 36,
         "coder": false,
         "pets": ["Luna", "B", "Sully"],
-        "img": "./images/me2.jpeg"
+        "img": "./images/paladin.png"
     },
     {
         "id": 5,
-        "name": "Katie",
+        "name": "Beatrice",
         "age": 35,
         "coder": false,
         "pets": ["Luna", "B", "Sully"],
-        "img": "./images/katie.jpg"
+        "img": "./images/ranger.png"
     }
 ]

@@ -62,9 +62,9 @@ class UserCard extends HTMLElement {
       
       attributeChangedCallback(name, oldValue, newValue) {
         if (name === "key") {
-            this.shadowRoot.querySelector("img").src = this.getAttribute("img")
+            this.shadowRoot.querySelector("img").src = this.getAttribute("avatar")
             
-            this.shadowRoot.querySelector("h1").innerText = this.getAttribute("doggo");
+            this.shadowRoot.querySelector("h1").innerText = this.getAttribute("name");
             this.shadowRoot.querySelector("h3").innerText = this.getAttribute("age");
 
             this.shadowRoot.querySelector("h4").innerText = this.getAttribute("key");
@@ -72,13 +72,13 @@ class UserCard extends HTMLElement {
         }
       }
       openModal() {
-        console.log('clicked from modal')
+        console.log("clicked from modal")
         const userModal = document.createElement("user-modal")
         userModal.setAttribute("doggo", this.getAttribute("doggo"))
         userModal.setAttribute("name", this.getAttribute("name"))
         userModal.setAttribute("age", this.getAttribute("age"))
         userModal.setAttribute("key", this.getAttribute("key"))
-        userModal.setAttribute("img", this.getAttribute("img"))
+        userModal.setAttribute("avatar", this.getAttribute("avatar"))
         document
             .getElementsByTagName("body")[0]
             .insertAdjacentElement("afterend", userModal);
