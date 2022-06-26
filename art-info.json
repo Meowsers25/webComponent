@@ -24,11 +24,21 @@
         "img": "./images/paladin.png"
     },
     {
-        "id": 5,
-        "name": "Beatrice",
-        "age": 35,
-        "coder": false,
-        "pets": ["Luna", "B", "Sully"],
-        "img": "./images/ranger.png"
+    "id": 4,
+    "name": "Luna",
+    "age": 36,
+    "coder": false,
+    "pets": ["Luna", "B", "Sully"],
+    "img": "./images/paladin.png"
+    },
+
+    {
+    "id": 4,
+    "name": "Luna",
+    "age": 36,
+    "coder": false,
+    "pets": ["Luna", "B", "Sully"],
+    "img": "./images/paladin.png"
     }
+    
 ]
